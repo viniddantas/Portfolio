@@ -24,3 +24,35 @@
 .cabecalho__email:hover {
     text-decoration: underline;
 }
+
+/*Main*/
+/*Apresentacao*/
+.apresentacao {
+    padding: 1rem;
+}
+.apresentacao__foto-perfil {
+    width: 98px;
+    border-radius: 100%;
+    height: 98px;
+}
+.apresentacao__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding: 1rem 0;
+}
+.apresentacao__resumo {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0 0 1rem 0;
+    text-align: justify;
+}
+.apresentacao__contatos {
+    display: flex;
+    font-size: 0.875rem;
+    justify-content: space-between;
+}
+.apresentacao__contato {
+    color: #464646;
+    font-weight: 600;
+    text-decoration: none;
+}
