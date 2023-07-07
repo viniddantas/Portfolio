@@ -56,3 +56,18 @@
     font-weight: 600;
     text-decoration: none;
 }
+
+/*Sobre*/
+.sobre {
+    background-color: #EAF2FD;
+    padding: 1rem;
+}
+.sobre__titulo {
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.sobre__resumo {
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
