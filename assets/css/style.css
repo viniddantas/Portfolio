@@ -1,0 +1,26 @@
+.cabecalho {
+    align-items: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+.cabecalho__apresentacao {
+    align-items: center;
+    display: flex;
+    margin-bottom: .5rem;
+}
+.cabecalho__nome {
+    font-size: 1rem;
+    font-weight: 700;
+    padding-left: 0.3rem;
+}
+.cabecalho__email {
+    color: #464646;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.cabecalho__email:hover {
+    text-decoration: underline;
+}
