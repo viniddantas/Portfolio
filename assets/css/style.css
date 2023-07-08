@@ -91,11 +91,32 @@
     text-align: center;
     padding: 2rem 0 1rem 0;
     background-color: #ffffff;
-    transition: 0.5s;
 }
 .habilidades__cartao:nth-child(-n + 2){
     margin-bottom: 1rem;
 }
-.habilidades__cartao:hover {
-    background-color: #d4d4d4;
+
+/*Hobbies*/
+.hobbies {
+    padding: 1rem;
+}
+.hobbies__titulo{
+    font-size: 1.375rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.hobbies__cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hobbies__cartao {
+    width: calc(50vw - 2rem);
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background-color: #ffffff;
+}
+.hobbies__cartao:nth-child(-n + 4){
+    margin-bottom: 1rem;
 }
