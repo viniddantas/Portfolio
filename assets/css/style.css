@@ -72,51 +72,29 @@
 }
 
 /*Habilidades*/
-.habilidades {
+.skills {
     padding: 1rem;
 }
-.habilidades__titulo{
+.hard-skills__titulo, .soft-skills__titulo{
     font-size: 1.375rem;
     font-weight: 700;
     padding-bottom: 1rem;
     text-align: center;
 }
-.habilidades__cartoes {
+.cartao__lista {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.habilidades__cartao {
+.cartao__item {
     width: calc(50vw - 2rem);
     text-align: center;
     padding: 2rem 0 1rem 0;
     background-color: #ffffff;
 }
-.habilidades__cartao:nth-child(-n + 2){
+.cartao__item:nth-child(-n + 4){
     margin-bottom: 1rem;
 }
-
-/*Hobbies*/
-.hobbies {
-    padding: 1rem;
-}
-.hobbies__titulo{
-    font-size: 1.375rem;
-    font-weight: 700;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-.hobbies__cartoes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.hobbies__cartao {
-    width: calc(50vw - 2rem);
-    text-align: center;
-    padding: 2rem 0 1rem 0;
-    background-color: #ffffff;
-}
-.hobbies__cartao:nth-child(-n + 4){
-    margin-bottom: 1rem;
+.item__logo {
+    margin-bottom: 0.5rem;
 }
