@@ -174,3 +174,30 @@
     background-color: #2A7AE4;
     color: #ffffff;
 }
+
+/*Contato*/
+.contato {
+    padding: 1rem;
+}
+.contato__titulo {
+    font-size: 1.375rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+.contato__texto {
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+.formulario__input, .formulario__textarea {
+    border: none;
+    width: calc((100vw - 2rem) - 32px);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Raleway, sans-serif;
+}
+.formulario__textarea {
+    height: 150px;
+}
