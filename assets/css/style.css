@@ -201,3 +201,18 @@
 .formulario__textarea {
     height: 150px;
 }
+
+/*Footer*/
+/*Rodape*/
+.rodape {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+.rodape__texto {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.rodape__texto:first-child {
+    padding-bottom: 0.5rem;
+}
