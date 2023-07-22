@@ -10,5 +10,23 @@ section {
 .titulo {
     font-size: 1.375rem;
     font-weight: 700;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 768px){
+    section {
+        padding: 2rem;
+    }
+    .titulo {
+        padding: 0 0 2rem 0;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    section {
+        padding: 2rem 6rem;
+    }
+    .titulo {
+        font-size: 2rem;
+    }
 }

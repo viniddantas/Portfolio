@@ -21,25 +21,37 @@
                 <img class="cabecalho__logo" src="assets/img/desenho-estrelas.svg" alt="Desenho de estrelas">
                 <h1 class="cabecalho__nome">Vinícius Domingues Dantas</h1>
             </div>
-            <a class="cabecalho__email" href="mailto:vini.dantas61@gmail.com">vini.dantas61@gmail.com</a>
+            <div class="cabecalho__menu">
+                <nav class="menu">
+                    <ul class="menu__lista">
+                        <li class="menu__item"><a href="#sobre-mim" class="item__link">Sobre mim</a></li>
+                        <li class="menu__item"><a href="#skills" class="item__link">Skills</a></li>
+                        <li class="menu__item"><a href="#formacao" class="item__link">Formação</a></li>
+                        <li class="menu__item"><a href="#projetos" class="item__link">Projetos</a></li>
+                    </ul>
+                    <a class="cabecalho__email" href="mailto:vini.dantas61@gmail.com">vini.dantas61@gmail.com</a>
+                </nav>
+            </div>
         </header>
         
         <main>
             <section class="apresentacao">
                 <img class="apresentacao__foto-perfil" src="assets/img/foto-perfil.jpg" alt="Foto de perfil">
-                <h2 class="apresentacao__titulo titulo">Olá, meu nome é Vinícius e construo páginas web</h2>
-                <p class="apresentacao__resumo">
-                    Eu sou formado em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.
-                </p>
-                <div class="apresentacao__contatos">
-                    <a class="apresentacao__contato" href="https://github.com/viniddantas" >GitHub</a>
-                    <a class="apresentacao__contato" href="https://www.linkedin.com/in/viniddantas/">Linkedln</a>
-                    <a class="apresentacao__contato" href="https://www.instagram.com/_viniddantas/" >Instagram</a>
-                    <a class="apresentacao__contato" href="#" >Currículo</a>
+                <div class="apresentacao__conteudo">
+                    <h2 class="apresentacao__titulo titulo">Olá, meu nome é Vinícius e construo páginas web</h2>
+                    <p class="apresentacao__resumo">
+                        Eu sou formado em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.
+                    </p>
+                    <ul class="apresentacao__contatos">
+                        <li class="contato__item"><a class="apresentacao__contato" href="https://github.com/viniddantas">GitHub</a></li>
+                        <li class="contato__item"><a class="apresentacao__contato" href="https://www.linkedin.com/in/viniddantas/">Linkedln</a></li>
+                        <li class="contato__item"><a class="apresentacao__contato" href="https://www.instagram.com/_viniddantas/" >Instagram</a></li>
+                        <li class="contato__item"><a class="apresentacao__contato" href="#" >Currículo</a></li>
+                    </ul>
                 </div>
             </section>
             
-            <section class="sobre">
+            <section class="sobre" id="sobre-mim">
                 <h2 class="sobre__titulo titulo">Sobre Mim</h2>
                 <p class="sobre__resumo">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. 
@@ -49,7 +61,7 @@
                 <img class="sobre__assinatura" src="assets/img/assinatura.png" alt="Assinatura">
             </section>
 
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="hard-skills">
                     <h2 class="hard-skills__titulo titulo">Hard Skills</h2>
                     <ul class="cartao__lista">
@@ -68,6 +80,14 @@
                         <li class="cartao__item">
                             <img class="item__logo" src="assets/img/icones/react-icone.svg" alt="icone do REACT">
                             <h3 class="item__nome">REACT</h3>
+                        </li>
+                        <li class="cartao__item">
+                            <img class="item__logo" src="assets/img/icones/react-icone.svg" alt="icone do REACT Native">
+                            <h3 class="item__nome">REACT Native</h3>
+                        </li>
+                        <li class="cartao__item">
+                            <img class="item__logo" src="assets/img/icones/mysql-icone.svg" alt="icone do REACT Native">
+                            <h3 class="item__nome">MySQL</h3>
                         </li>
                     </ul>
                 </div>
@@ -102,78 +122,89 @@
                 </div>
             </section>
 
-            <section class="formacao">
+            <section class="formacao" id="formacao">
                 <h2 class="formacao__titulo titulo">Formação Acadêmica</h2>
-                <ul class="formacao__lista">
-                    <li>
-                        <img class="formacao__imagem" src="assets/img/formacoes/ifsp-suzano.svg" alt="Logo do IFSP - Suzano">
-                    </li>
-                    <li>
-                        <h3 class="formacao__nome">Integrado em Automação Industrial</h3>
-                    </li>
-                    <li>
-                        <p class="formacao__subtitulo">2023 - IFSP Suzano</p>
-                    </li>
-                </ul>
-                <ul class="formacao__lista">
-                    <li>
-                        <img class="formacao__imagem" src="assets/img/formacoes/alura.svg" alt="Logo da Alura">
-                    </li>
-                    <li>
-                        <h3 class="formacao__nome">Formação Front-End</h3>
-                    </li>
-                    <li>
-                        <p class="formacao__subtitulo">Em andamento - Alura</p>
-                    </li>
-                </ul>
+                <div class="formacao__conteudo">
+                    <ul class="formacao__lista">
+                        <li>
+                            <img class="formacao__imagem" src="assets/img/formacoes/ifsp-suzano.svg" alt="Logo do IFSP - Suzano">
+                        </li>
+                        <li>
+                            <h3 class="formacao__nome">Integrado em Automação Industrial</h3>
+                        </li>
+                        <li>
+                            <p class="formacao__subtitulo">2023 - IFSP Suzano</p>
+                        </li>
+                    </ul>
+                    <ul class="formacao__lista">
+                        <li>
+                            <img class="formacao__imagem" src="assets/img/formacoes/alura.svg" alt="Logo da Alura">
+                        </li>
+                        <li>
+                            <h3 class="formacao__nome">Formação Front-End</h3>
+                        </li>
+                        <li>
+                            <p class="formacao__subtitulo">Em andamento - Alura</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
-            <section class="experiencia">
+            <section class="experiencia" id="projetos">
                 <h2 class="experiencia__titulo titulo" >Experiência profissional</h2>
                 <ul class="experiencia__lista">
                     <li class="experiencia__item">
                         <img class="item__imagem" src="assets/img/experiencias/decodificador.png" alt="Visão Geral do decodificador">
-                        <h3 class="item__nome">Decodificador de texto</h3>
-                        <p class="item__subtitulo">Challenge Alura Decodificador</p>
-                        <div class="item__botoes">
-                            <a class="botao" href="https://github.com/viniddantas/Challenge-Oracle-One">Repositório</a>
-                            <a class="botao" href="https://viniddantas.github.io/Challenge-Oracle-One/">Ver demo</a>
+                        <div class="item__conteudo">
+                            <h3 class="item__nome">Decodificador de texto</h3>
+                            <p class="item__subtitulo">Challenge Alura Decodificador</p>
+                            <div class="item__botoes">
+                                <a class="botao" href="https://github.com/viniddantas/Challenge-Oracle-One">Repositório</a>
+                                <a class="botao" href="https://viniddantas.github.io/Challenge-Oracle-One/">Ver demo</a>
+                            </div>
                         </div>
                     </li>
                     <li class="experiencia__item">
-                        <img class="item__imagem" src="assets/img/experiencias/apeperia.png" alt="Visão geral do site Apeperia">
-                        <h3 class="item__nome">Apeperia</h3>
-                        <p class="item__subtitulo">Site Apeperia - Mobile First</p>
-                        <div class="item__botoes">
-                            <a class="botao" href="https://github.com/viniddantas/ApeperiaMobileFirst">Repositório</a>
-                            <a class="botao" href="https://viniddantas.github.io/ApeperiaMobileFirst/">Ver demo</a>
+                        <img class="item__imagem item__imagem-invertido" src="assets/img/experiencias/apeperia.png" alt="Visão geral do site Apeperia">
+                        <div class="item__conteudo">
+                            <h3 class="item__nome">Apeperia</h3>
+                            <p class="item__subtitulo">Site Apeperia - Mobile First</p>
+                            <div class="item__botoes">
+                                <a class="botao" href="https://github.com/viniddantas/ApeperiaMobileFirst">Repositório</a>
+                                <a class="botao" href="https://viniddantas.github.io/ApeperiaMobileFirst/">Ver demo</a>
+                            </div>
                         </div>
                     </li>
                     <li class="experiencia__item">
                         <img class="item__imagem" src="assets/img/experiencias/fruta-e-fruto.png" alt="Visão geral do site Fruta e Fruto">
-                        <h3 class="item__nome">Fruta & Fruto</h3>
-                        <p class="item__subtitulo">Site Fruta e Fruto responsivo</p>
-                        <div class="item__botoes">
-                            <a class="botao" href="https://github.com/viniddantas/Fruta-e-Fruto">Repositório</a>
-                            <a class="botao" href="https://viniddantas.github.io/Fruta-e-Fruto/">Ver demo</a>
+                        <div class="item__conteudo">
+                            <h3 class="item__nome">Fruta & Fruto</h3>
+                            <p class="item__subtitulo">Site Fruta e Fruto responsivo</p>
+                            <div class="item__botoes">
+                                <a class="botao" href="https://github.com/viniddantas/Fruta-e-Fruto">Repositório</a>
+                                <a class="botao" href="https://viniddantas.github.io/Fruta-e-Fruto/">Ver demo</a>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </section>
 
             <section class="contato">
-                <h2 class="contato__titulo titulo">Contato</h2>
-                <p class="contato__texto">
-                    Quer entrar em contato comigo?
-                    Preencha o formulário ao lado e entrarei em contato o mais rápido possível.
-                </p>
-                <form class="contato__formulario" action="">
-                    <input class="formulario__input" type="text" required placeholder="Nome">
-                    <input class="formulario__input" type="email" required placeholder="E-mail">
-                    <input class="formulario__input" type="text" required placeholder="Assunto">
-                    <textarea class="formulario__textarea" name="" id="" cols="30" rows="10" required placeholder="Mensagem"></textarea>
-                    <input class="formulario__botao botao" type="submit" value="Enviar mensagem">
-                </form>
+                <img class="contato__imagem" src="assets/img/contato.png" alt="Imagem de telefone">
+                <div class="contato__conteudo">
+                    <h2 class="contato__titulo titulo">Contato</h2>
+                    <p class="contato__texto">
+                        Quer entrar em contato comigo?
+                        Preencha o formulário ao lado e entrarei em contato o mais rápido possível.
+                    </p>
+                    <form class="contato__formulario" action="">
+                        <input class="formulario__input" type="text" required placeholder="Nome">
+                        <input class="formulario__input" type="email" required placeholder="E-mail">
+                        <input class="formulario__input" type="text" required placeholder="Assunto">
+                        <textarea class="formulario__textarea" name="" id="" cols="30" rows="10" required placeholder="Mensagem"></textarea>
+                        <input class="formulario__botao botao" type="submit" value="Enviar mensagem">
+                    </form>
+                </div>
             </section>
         </main>
 

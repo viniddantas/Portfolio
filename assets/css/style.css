@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 .cabecalho__apresentacao {
     align-items: center;
@@ -13,6 +13,13 @@
     font-size: 1rem;
     font-weight: 700;
     padding-left: 0.3rem;
+}
+.menu__lista {
+    display: none;
+    text-align: center;
+}
+.item__link {
+    color: #464646;
 }
 .cabecalho__email {
     color: #464646;
@@ -35,18 +42,25 @@
     font-size: 0.875rem;
     font-weight: 400;
     padding: 0 0 1rem 0;
-    text-align: justify;
 }
 .apresentacao__contatos {
     display: flex;
     font-size: 0.875rem;
     justify-content: space-between;
+    width: max-content;
+}
+.contato__item {
+    padding-right: 1rem;
+}
+.contato__item:last-child {
+    padding-right: 0rem;
 }
 .apresentacao__contato {
     color: #464646;
     font-weight: 600;
     text-decoration: none;
 }
+
 
 /*Sobre*/
 .sobre {
@@ -61,19 +75,20 @@
 .hard-skills__titulo, .soft-skills__titulo{
     text-align: center;
 }
+.soft-skills__titulo {
+    padding-top: 1rem;
+}
 .cartao__lista {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1rem;
 }
 .cartao__item {
     width: calc(50vw - 2rem);
     text-align: center;
     padding: 2rem 0 1rem 0;
     background-color: #ffffff;
-}
-.cartao__item:nth-child(-n + 4){
-    margin-bottom: 1rem;
 }
 .item__logo {
     margin-bottom: 0.5rem;
@@ -86,7 +101,7 @@
 .formacao__titulo {
     text-align: center;
 }
-.formacao__lista:nth-child(2) {
+.formacao__lista:nth-child(1) {
     padding-bottom: 1rem;
 }
 .formacao__imagem{
@@ -107,12 +122,14 @@
 .experiencia__titulo {
     text-align: center;
 }
+
 .experiencia__item:nth-child(-n + 2) {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 .item__imagem {
-    width: calc(100vw - 2rem);
+    box-sizing: border-box;
     box-shadow: 3px 3px 10px 3px #888888;
+    width: 100%;
 }
 .item__nome {
     font-size: 1rem;
@@ -154,15 +171,19 @@
 }
 .formulario__input, .formulario__textarea {
     border: none;
-    width: calc((100vw - 2rem) - 32px);
+    box-sizing: border-box;
     margin-bottom: 1rem;
     padding: 1rem;
     font-weight: 400;
     font-size: 1rem;
     font-family: Raleway, sans-serif;
+    width: 100%;
 }
 .formulario__textarea {
     height: 150px;
+}
+.contato__imagem {
+    display: none;
 }
 
 /*Footer*/
@@ -178,4 +199,132 @@
 }
 .rodape__texto:first-child {
     padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem 0 2rem;
+    }    
+    .cabecalho__email {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    .apresentacao{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .apresentacao__foto-perfil {
+        height: 146px;  
+        order: 1;
+        width: 146px;
+    }
+    .apresentacao__conteudo {
+        width: 70vw;
+    }
+    .apresentacao__resumo, .apresentacao__contato {
+        font-size: 1rem;
+    }
+    .contato__item {
+        padding-right: 2rem;
+    }
+
+    .soft-skills__titulo {
+        padding-top: 2rem;
+    } 
+    .cartao__lista {
+        gap: 1rem;
+    }
+    .cartao__item {
+        width: calc(32vw - 2rem);
+    }
+
+    .formacao__conteudo{
+        display: flex;
+        justify-content: space-around;
+    }
+    .formacao__imagem{
+        width: calc(50VW - 4rem);
+    }
+    .formacao__lista:nth-child(1) {
+        padding-bottom: 0rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu, .menu__lista{
+        display: flex;
+    }
+    .menu__item {
+        padding-right: 1rem;
+    }
+    .item__link {
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .apresentacao__foto-perfil{
+        height: 368px;
+        width: 368px;
+    }
+    .apresentacao__titulo {
+        font-size: 3.25rem;
+    }
+    .apresentacao__resumo {
+        font-size: 1.375rem;
+    }
+    .contato__item {
+        padding-right: 4rem;
+    }
+
+    .sobre__resumo {
+        max-width: 60vw;
+    }
+
+    .cartao__item {
+        width: calc(15vw - 2rem);
+    }
+
+    .formacao__imagem {
+        width: calc(50VW - 8rem);
+    }
+    .formacao__nome {
+        font-size: 1.375rem;
+    }
+    .formacao__subtitulo {
+        font-size: 1rem;
+    }
+
+    .item__imagem {
+        margin-right: 5rem;
+        width: 40vw;
+    }
+    .experiencia__item {
+        display: flex;
+        align-items: center;  
+    }
+    .experiencia__item:nth-child(-n + 2) {
+        margin-bottom: 3rem;    
+    }
+    .experiencia__item:nth-child(2n) {
+        justify-content: flex-end;
+    }
+    .item__imagem-invertido {
+        order: 1;
+        margin-right: 0;
+        margin-left: 5rem;
+    }
+
+    .contato {
+        display: flex;
+    }
+    .contato__imagem {
+        display: block;
+        margin-right: 1rem;
+        height: 527px;
+    }
 }
