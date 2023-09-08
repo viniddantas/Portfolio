@@ -197,12 +197,27 @@
                         Quer entrar em contato comigo?
                         Preencha o formulário ao lado e entrarei em contato o mais rápido possível.
                     </p>
-                    <form class="contato__formulario" action="">
-                        <input class="formulario__input" type="text" required placeholder="Nome">
-                        <input class="formulario__input" type="email" required placeholder="E-mail">
-                        <input class="formulario__input" type="text" required placeholder="Assunto">
-                        <textarea class="formulario__textarea" name="" id="" cols="30" rows="10" required placeholder="Mensagem"></textarea>
-                        <input class="formulario__botao botao" type="submit" value="Enviar mensagem">
+                    <form class="contato__formulario" action="" data-formulario>
+                        <div>
+                            <input class="formulario__input" name="nome" type="text" placeholder="Nome" minlength="2" maxlength="50" data-nome required>
+                            <span class="formulario__erro"></span>
+                        </div>
+
+                        <div>
+                            <input class="formulario__input" name="email" type="email" placeholder="E-mail" minlength="4" data-email required>
+                            <span class="formulario__erro"></span>
+                        </div>
+
+                        <div>
+                            <input class="formulario__input" name="assunto" type="text" placeholder="Assunto" maxlength="50" data-assunto required>
+                            <span class="formulario__erro"></span>
+                        </div>
+
+                        <div>
+                            <textarea class="formulario__textarea" name="mensagem" id="" cols="30" rows="10" placeholder="Mensagem" maxlength="300" required></textarea>
+                            <span class="formulario__erro"></span>
+                        </div>
+                        <input class="botao" type="submit" value="Enviar mensagem" data-botao-enviar>
                     </form>
                 </div>
             </section>
@@ -212,5 +227,7 @@
             <p class="rodape__texto">Desenvolvido por Vinícius Domingues Dantas</p>
             <p class="rodape__texto">2023</p>
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>

@@ -156,11 +156,11 @@
 .botao:first-child {
     margin-right: 1rem;
 }
+/*
 .botao:last-child {
-    background-color: #2A7AE4;
-    color: #ffffff;
+    
 }
-
+*/
 /*Contato*/
 .contato {
     background-color: #EAF2FD;
@@ -173,7 +173,7 @@
 .formulario__input, .formulario__textarea {
     border: none;
     box-sizing: border-box;
-    margin-bottom: 1rem;
+    margin: 0.5rem 0;
     padding: 1rem;
     font-weight: 400;
     font-size: 1rem;
@@ -183,9 +183,26 @@
 .formulario__textarea {
     height: 150px;
 }
+.formulario__erro{
+    display: block;
+    color: red;   
+}
 .contato__imagem {
     display: none;
 }
+
+.formulario__botao-ativo{
+    background-color: #2A7AE4;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+.formulario__botao-desabilitado{
+    border: 0px;
+    background-color: #2a7be44f;
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
 
 /*Footer*/
 /*Rodape*/
