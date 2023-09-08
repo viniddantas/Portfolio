@@ -305,10 +305,18 @@
 
     .cartao__item {
         width: calc(15vw - 2rem);
+        transition: 500ms ease-in-out
+    }
+    .cartao__item:hover {
+        transform: scale(1.05);
     }
 
     .formacao__imagem {
         width: calc(50VW - 8rem);
+        transition: 500ms ease-in-out;
+    }
+    .formacao__imagem:hover {
+        transform: scale(1.05);
     }
     .formacao__nome {
         font-size: 1.375rem;
@@ -320,6 +328,10 @@
     .item__imagem {
         margin-right: 5rem;
         width: 40vw;
+        transition: 500ms ease-in-out;
+    }
+    .item__imagem:hover {
+        transform: scale(1.05);
     }
     .experiencia__item {
         display: flex;
